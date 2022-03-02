@@ -1,6 +1,5 @@
 import React from "react";
 import { CartNavStyle, TopNav } from "./Style";
-import { Center } from "Styles/layouts/Center";
 import BackButton from "Components/Atoms/Button/BackButton";
 import Typography from "Components/Atoms/Typography/Index";
 import Cart from "Components/Atoms/SvgIcons/Cart";

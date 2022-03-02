@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import BookWithOverlay from "Components/Organisms/BookWithOverlay/Index";
 
 import Slider from "react-slick";
 import { CenterExtended } from "Styles/layouts/Center";
 
-import { useQuery } from "@apollo/client";
-import { GET_FEATURED_BOOKS } from "Queries/Index";
-import Spinner from "Components/Atoms/Spinner/Index";
 import { Props } from "./interface";
 
 const BookSlider: React.FC<Props> = (props) => {

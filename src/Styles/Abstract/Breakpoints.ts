@@ -1,21 +1,21 @@
 import { css } from "styled-components";
 
-const sizesREM = {
-  /**
-   * Default desktop unit size === 16px
-   * i.e 62.5% of 16px === 10px === 1rem
-   *
-   * i.e 2rem === 20px
-   * i.e 10rem === 100px etc.
-   */
-  xlg: "180rem", // 1800px --> Big desktop
-  lg: "125rem", // 1250px --> Tablet landscape
-  md: "10.65rem", // 1065px --> Tablet landscape medium size
-  xmd: "10.45rem", // 1045px --> Tablet landscape small size
-  sm: "90rem", // 900px --> Tablet portrait
-  xsm: "60rem", // 600px --> Phone
-  xxsm: "46rem", // 460px --> Small Phone
-};
+// const sizesREM = {
+//   /**
+//    * Default desktop unit size === 16px
+//    * i.e 62.5% of 16px === 10px === 1rem
+//    *
+//    * i.e 2rem === 20px
+//    * i.e 10rem === 100px etc.
+//    */
+//   xlg: "180rem", // 1800px --> Big desktop
+//   lg: "125rem", // 1250px --> Tablet landscape
+//   md: "10.65rem", // 1065px --> Tablet landscape medium size
+//   xmd: "10.45rem", // 1045px --> Tablet landscape small size
+//   sm: "90rem", // 900px --> Tablet portrait
+//   xsm: "60rem", // 600px --> Phone
+//   xxsm: "46rem", // 460px --> Small Phone
+// };
 
 const sizesEM = {
   /**
