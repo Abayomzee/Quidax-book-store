@@ -12,7 +12,7 @@ const BookCover: React.FC<Props> = (props) => {
   const { className, size, effectonhover, image, children } = props;
   return (
     <BookCoverStyle
-      className={className ? className : ""}
+      className={`shrink-0 ${className ? className : ""}`}
       size={size}
       effectonhover={effectonhover}
     >

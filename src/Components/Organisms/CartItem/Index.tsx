@@ -19,7 +19,7 @@ const CartItem: React.FC<Props> = (props) => {
 
   return (
     <CartItemStyle>
-      <BookCover size="sm" className="shrink-0" image={item?.image_url} effectonhover={false} />
+      <BookCover size="sm" image={item?.image_url} effectonhover={false} />
       <CartItemRight>
         <CartItemRightTop>
           <div className="text-truncate">
