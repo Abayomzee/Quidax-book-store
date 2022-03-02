@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Quidax Book Store Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### How To Install And Run Project
 
-## Available Scripts
+1.  Ensure you have node installed on your computer
+2.  Clone the repository by running
+    ```
+    git clone git@github.com:Abayomzee/Quidax-book-store.git
+    ```
+3.  open the terminal on the root folder and run:
+    ```
+    npm install
+    ```
+4.  Wait for it to install all project dependencies and run:
+    ```
+    npm run start
+    ```
+5.  The app will automatically launch in your default browser or click the port shown from the terminal
 
-In the project directory, you can run:
+### Assumptions
 
-### `npm start`
+1. User shouldn't be able to add item to cart more than it available quantity
+2. For better user experience, user should see a more intuitive UI when waiting for a data to load e.g a loader or spinner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Requirements Not Covered
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Reducing Item availability after adding or removing it from the cart, and this was due to a blocker from the endpoint that is meant to handle that.
 
-### `npm test`
+### Issues faced
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. The only issue i faced was reducing the item available copies, this was due to a blocker from the updateBook endoint, it seems to require authentication before such action can be performed.
+2. Getting the actual shadow value for components that has shadow was a little stressful because it's not available in the Design. This isn't bad though, but it might give room for differences in design and actual output.
 
-### `npm run build`
+### Constructive FeedBack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I appreciate being given this oppurtuinity, and also the level of understanding towards task completion.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thanks
