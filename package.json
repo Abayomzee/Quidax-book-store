@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.8",
-    "@types/styled-components": "^5.1.23"
+    "@types/styled-components": "^5.1.23",
+    "babel-plugin-styled-components": "^2.0.6"
   }
 }
