@@ -10,7 +10,7 @@ export const Center = styled.section`
 
   /* Media Queries */
   ${responsive(
-    "lg",
+    "xlg",
     `
     padding-left: 2rem;
     padding-right: 2rem;
