@@ -9,7 +9,13 @@ interface Props {
   onSearchChange?: (val: any) => void;
 }
 const SearchInput: React.FC<Props> = (props) => {
-  const { placeholder, className, onSearchChange, type = "text" } = props;
+  const {
+    placeholder,
+    className,
+    onSearchChange,
+    type = "text",
+    ...otherProps
+  } = props;
   return (
     <InputStyle
       type={type}
@@ -18,7 +24,7 @@ const SearchInput: React.FC<Props> = (props) => {
       onChange={({ target }: React.ChangeEvent<HTMLInputElement>) =>
         onSearchChange!(target.value)
       }
-      {...props}
+      {...otherProps}
     />
   );
 };

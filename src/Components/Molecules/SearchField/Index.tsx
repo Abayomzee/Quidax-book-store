@@ -9,14 +9,14 @@ interface Props {
   searValue?: any;
 }
 const SearchField: React.FC<Props> = (props) => {
-  const { className, searValue, onSearchChange } = props;
+  const { className, searValue, onSearchChange, ...otherProps } = props;
   return (
     <SearchFieldStyle className={`${className ? className : ""}`}>
       <SearchInput
         className="seacrhInput"
         placeholder="Search books, genres, authors, etc."
         value={searValue}
-        {...props}
+        {...otherProps}
       />
       <SearchButton
         className="searchBtn"

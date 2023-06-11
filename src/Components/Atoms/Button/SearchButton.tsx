@@ -10,13 +10,13 @@ interface Props {
 }
 const SearchButton: React.FC<Props> = (props) => {
   // Props
-  const { className, searValue, clearSearch } = props;
+  const { className, searValue, clearSearch, ...otherProps } = props;
 
   // Jsx to reuturn or render
   return (
     <ButtonStyle
       className={`btn-search ${className ? className : ""}`}
-      {...props}
+      {...otherProps}
       onClick={() => clearSearch!("")}
     >
       {searValue ? <Times /> : <Lens />}

@@ -14,7 +14,7 @@ import { mapObjectToOneArray } from "Utils/helper";
 // let debounceHandler: any = null;
 
 interface Props {}
-const HomeTemplate: React.FC<Props> = (props) => {
+const HomeTemplate: React.FC<Props> = () => {
   const [searValue, setSearchValue] = useState<string>("");
 
   const { loading, data } = useQuery(GET_BOOKS);
@@ -69,5 +69,4 @@ const HomeTemplate: React.FC<Props> = (props) => {
     </>
   );
 };
-// 8 results found for `four steps to the epiph`
 export default HomeTemplate;
