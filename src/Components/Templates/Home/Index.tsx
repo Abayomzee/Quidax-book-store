@@ -39,7 +39,7 @@ const HomeTemplate: React.FC<Props> = () => {
           <Typography
             as="h5"
             className="heading-2 mt-60 text-center"
-            text={"No books available"}
+            text={"😢 No books available"}
           />
         ) : (
           <>
