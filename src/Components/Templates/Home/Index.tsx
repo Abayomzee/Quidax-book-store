@@ -10,6 +10,7 @@ import { useQuery } from "@apollo/client";
 import { GET_BOOKS, SEARCH_BOOKS_BY_FILTER } from "Queries/Index";
 import Spinner from "Components/Atoms/Spinner/Index";
 import { mapObjectToOneArray } from "Utils/helper";
+import Typography from "Components/Atoms/Typography/Index";
 
 // let debounceHandler: any = null;
 
@@ -34,6 +35,12 @@ const HomeTemplate: React.FC<Props> = () => {
       <DefaultTemplate onSearchChange={setSearchValue} searValue={searValue}>
         {loading || loadingSearch ? (
           <Spinner />
+        ) : !dataToRender?.books?.length ? (
+          <Typography
+            as="h5"
+            className="heading-2 mt-60 text-center"
+            text={"No books available"}
+          />
         ) : (
           <>
             {!searValue && (
